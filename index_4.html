@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HTML Attributes Demo</title>
+  <style>
+    .highlight {
+      background-color: #fef3c7;
+      padding: 10px;
+      border-left: 5px solid orange;
+    }
+    #main-para {
+      font-style: italic;
+      color: teal;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 title="Main Heading using title attribute">HTML Attributes Example</h1>
+
+  <!-- Anchor tag with href and target -->
+  <p>
+    Visit <a href="https://www.wikipedia.org" target="_blank" title="Opens Wikipedia">Wikipedia</a> in a new tab.
+  </p>
+
+  <!-- Image with src, alt, width, height -->
+  <p>
+    <img src="carr.avif" alt="Placeholder Image" width="300" height="150">
+  </p>
+
+  <!-- Paragraph with id and class -->
+  <p id="main-para" class="highlight">This paragraph uses both an ID and a class for styling.</p>
+
+  <!-- Styled heading using style attribute -->
+  <h2 style="color: darkblue; font-size: 22px;">Styled Heading (inline CSS)</h2>
+
+  <!-- Form demonstrating input attributes -->
+  <form action="/submit" method="POST">
+
+    <label for="username">Username (required, max 15 chars):</label><br>
+    <input type="text" id="username" name="username" placeholder="Enter your username" required maxlength="15"><br><br>
+
+    <label for="password">Password (min 6 chars):</label><br>
+    <input type="password" id="password" name="password" required minlength="6"><br><br>
+
+    <label for="dob">Date of Birth:</label><br>
+    <input type="date" id="dob" name="dob"><br><br>
+
+    <label for="attendance">Classes Attended (min 1 - max 100):</label><br>
+    <input type="number" id="attendance" name="attendance" min="1" max="100" step="1"><br><br>
+
+    <!-- Radio Buttons -->
+    <p>Are you a student?</p>
+    <input type="radio" id="yes" name="student" value="yes" checked>
+    <label for="yes">Yes</label>
+    <input type="radio" id="no" name="student" value="no">
+    <label for="no">No</label><br><br>
+
+    <!-- Dropdown with selected -->
+    <label for="course">Choose your course:</label><br>
+    <select id="course" name="course">
+      <option selected disabled>-- Select --</option>
+      <option value="ece">Electronics</option>
+      <option value="cse">Computer Science</option>
+      <option value="mech">Mechanical</option>
+    </select><br><br>
+
+    <!-- Disabled input -->
+    <label>Email (disabled input example):</label><br>
+    <input type="email" value="student@example.com" disabled><br><br>
+
+    <!-- Readonly input -->
+    <label>Reference Code (readonly):</label><br>
+    <input type="text" value="ABC12345" readonly><br><br>
+
+    <!-- Submit Button with title -->
+    <input type="submit" value="Submit" title="Click to submit the form">
+
+  </form>
+
+  <h2>Ordered List (Numbered)</h2>
+  <ol>
+      <li>Wake up</li>
+      <li>Brush teeth</li>
+      <li>Have breakfast</li>
+  </ol>
+
+  <h2>Unordered List (Bullets)</h2>
+  <ul>
+      <li>Milk</li>
+      <li>Bread</li>
+      <li>Eggs</li>
+  </ul>
+
+  <h2>Nested List (List inside a list)</h2>
+  <ul>
+      <li>Frontend
+          <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+          </ul>
+      </li>
+      <li>Backend
+          <ul>
+              <li>Node.js</li>
+              <li>Python</li>
+          </ul>
+      </li>
+  </ul>
+
+  <h2>Description List (Terms and Definitions)</h2>
+  <dl>
+      <dt>HTML</dt>
+      <dd>HyperText Markup Language</dd>
+
+      <dt>CSS</dt>
+      <dd>Cascading Style Sheets</dd>
+
+      <dt>JS</dt>
+      <dd>JavaScript</dd>
+  </dl>
+
+  <header style="background-color: #f2f2f2; padding: 10px;">
+    <h1>My Personal Blog</h1>
+    <nav>
+        <a href="#home">Home</a> |
+        <a href="#about">About</a> |
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<main>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hi! I’m a student learning web development. I enjoy coding and writing articles.</p>
+    </section>
+
+    <article>
+        <h2>My First Blog Post</h2>
+        <p>This is the content of the first blog post. I talk about HTML and how useful it is!</p>
+    </article>
+
+    <aside style="background-color: #e7f3fe; padding: 10px;">
+        <h4>Quick Tip</h4>
+        <p>Use semantic tags to make your HTML more accessible and SEO-friendly.</p>
+    </aside>
+</main>
+
+<footer style="background-color: #f2f2f2; padding: 10px;">
+    <p>&copy; 2025 My Blog. All rights reserved.</p>
+</footer>
+
+
+</body>
+</html>
