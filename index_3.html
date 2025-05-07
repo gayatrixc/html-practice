@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Example Page</title>
+</head>
+<body>
+
+    <!-- New Anchor Tag Example -->
+    <a href="https://www.nationalgeographic.com/animals" 
+       target="_blank" 
+       title="Explore amazing animal facts on National Geographic">
+       Explore Animals
+    </a>
+    <br><br>
+
+    <!-- Image Example -->
+    <img src="carr.avif" width="300px" alt="flower" />
+    <br><br>
+
+    <!-- Table Example -->
+    <h2>Sample Table</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>City</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Alice</td>
+                <td>25</td>
+                <td>New York</td>
+            </tr>
+            <tr>
+                <td>Bob</td>
+                <td>30</td>
+                <td>Los Angeles</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Div and Span Example -->
+    <div style="background-color: lightgray; padding: 10px; margin-top: 20px;">
+        <h3>This is a div container</h3>
+        <p>This paragraph contains a <span style="color: red;">highlighted word</span> using span.</p>
+    </div>
+
+    <!-- Semantic Elements -->
+    <header>
+        <h1>Website Header</h1>
+    </header>
+
+    <main>
+        <article>
+            <h2>Article Title</h2>
+            <p>This is an article section talking about web development basics.</p>
+        </article>
+
+        <section>
+            <h2>Section Title</h2>
+            <p>This is a section inside the main element, often used to group content by topic.</p>
+        </section>
+
+        <aside>
+            <h3>Sidebar</h3>
+            <p>This is an aside element, often used for side notes or ads.</p>
+        </aside>
+    </main>
+
+    <footer>
+        <p>Website Footer &copy; 2025</p>
+    </footer>
+
+    <!-- Form Example -->
+    <h2>Contact Us</h2>
+    <form action="/submit" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <br><br>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" cols="30"></textarea>
+        <br><br>
+
+        <input type="submit" value="Submit" />
+    </form>
+<!-- 1. Anchor Tags -->
+<h2>Anchor Tag Examples</h2>
+<a href="https://www.w3schools.com/html/" target="_blank" title="Learn HTML basics">
+    Learn HTML at W3Schools
+</a><br>
+
+<a href="#contact-form" title="Jump to contact form section">Go to Contact Form</a><br>
+
+<a href="mailto:someone@example.com" title="Send an email">Email Us</a><br>
+
+<!-- 2. Table Example -->
+<h2>Student Marks Table</h2>
+<table border="1" cellpadding="5">
+    <thead>
+        <tr>
+            <th>Roll No</th>
+            <th>Name</th>
+            <th>Math</th>
+            <th>Science</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>101</td>
+            <td>Alice</td>
+            <td>85</td>
+            <td>90</td>
+        </tr>
+        <tr>
+            <td>102</td>
+            <td>Bob</td>
+            <td>78</td>
+            <td>88</td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- 3. Div and Span -->
+<h2>Div and Span Example</h2>
+<div style="background-color: #f0f0f0; padding: 10px;">
+    <p>This is a paragraph inside a <strong>div</strong>.</p>
+    <p>The <span style="color: blue;">blue word</span> is inside a span tag.</p>
+</div>
+
+<!-- 4. Semantic Elements -->
+<header>
+    <h1>Website Header</h1>
+</header>
+
+<main>
+    <section>
+        <h2>About Us</h2>
+        <p>This section provides information about the website.</p>
+    </section>
+
+    <article>
+        <h2>Blog Post</h2>
+        <p>This article discusses the importance of semantic HTML.</p>
+    </article>
+
+    <aside>
+        <h4>Tip:</h4>
+        <p>Use <code>&lt;main&gt;</code> only once per page.</p>
+    </aside>
+</main>
+
+<footer>
+    <p>&copy; 2025 HTML Learning Site</p>
+</footer>
+
+<!-- 5. Forms -->
+<h2 id="contact-form">User Registration Form</h2>
+<form action="/submit" method="post">
+    <!-- Username with min/max length -->
+    <label for="username">Username (3-15 chars):</label>
+    <input type="text" id="username" name="username" minlength="3" maxlength="15" required />
+    <br><br>
+
+    <!-- Password with min/max length -->
+    <label for="password">Password (6-20 chars):</label>
+    <input type="password" id="password" name="password" minlength="6" maxlength="20" required />
+    <br><br>
+
+    <!-- Date of Birth -->
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" required />
+    <br><br>
+
+    <!-- Number of classes attended (positive only) -->
+    <label for="classes">Classes Attended:</label>
+    <input type="number" id="classes" name="classes" min="1" max="100" required />
+    <br><br>
+
+    <!-- Gender selection using radio buttons -->
+    <p>Gender:</p>
+    <input type="radio" id="male" name="gender" value="male" required />
+    <label for="male">Male</label>
+
+    <input type="radio" id="female" name="gender" value="female" />
+    <label for="female">Female</label>
+
+    <input type="radio" id="other" name="gender" value="other" />
+    <label for="other">Other</label>
+    <br><br>
+
+    <!-- Dropdown for course selection -->
+    <label for="course">Select your course:</label>
+    <select id="course" name="course" required>
+        <option value="">--Choose an option--</option>
+        <option value="ece">Electronics & Communication</option>
+        <option value="cse">Computer Science</option>
+        <option value="mech">Mechanical</option>
+    </select>
+    <br><br>
+
+    <input type="submit" value="Register" />
+</form>
+
+</body>
+</html>
